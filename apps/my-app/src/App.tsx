@@ -1,5 +1,6 @@
 import React from 'react';
 import { MyComponent } from 'some-lib-code-react';
+import { OtherMyComponent } from 'other-lib-code-react';
 import { defineCustomElements } from 'some-lib-code/loader';
 defineCustomElements();
 
@@ -9,8 +10,12 @@ function App() {
   return (
     <div>
       <MyComponent className={value ? 'is-red' : ''}>
-        {value ? 'true' : 'false'}
+        Should apply 'is-red' = {value ? 'true' : 'false'}
       </MyComponent>
+
+      <OtherMyComponent className={value ? 'is-red' : ''}>
+        Should apply 'is-red' = {value ? 'true' : 'false'}
+      </OtherMyComponent>
 
       <button onClick={() => setValue(!value)}>Test 123</button>
     </div>

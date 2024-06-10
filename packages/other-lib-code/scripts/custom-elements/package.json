@@ -1,5 +1,5 @@
 {
-  "name": "some-lib-code/components",
+  "name": "other-lib-code/components",
   "version": "0.0.0",
   "main": "./index.js",
   "types": "./custom-elements.d.ts",

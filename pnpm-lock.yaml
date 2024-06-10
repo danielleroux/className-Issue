@@ -102,9 +102,9 @@ importers:
 
   packages/other-lib-code-react:
     dependencies:
-      some-lib-code:
+      other-lib-code:
         specifier: workspace:*
-        version: link:../some-lib-code
+        version: link:../other-lib-code
     devDependencies:
       '@types/node':
         specifier: ^16.18.11
