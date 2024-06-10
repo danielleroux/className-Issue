@@ -1,7 +1,7 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'my-component',
+  tag: 'other-my-component',
   styleUrl: 'my-component.css',
   shadow: true,
 })
@@ -9,7 +9,7 @@ export class MyComponent {
   render() {
     return (
       <div>
-        includeImportCustomElements = false <slot></slot>
+        includeImportCustomElements = true: <slot></slot>
       </div>
     );
   }

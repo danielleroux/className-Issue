@@ -6,32 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface OtherMyComponent {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLOtherMyComponentElement extends Components.OtherMyComponent, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLOtherMyComponentElement: {
+        prototype: HTMLOtherMyComponentElement;
+        new (): HTMLOtherMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "other-my-component": HTMLOtherMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface OtherMyComponent {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "other-my-component": OtherMyComponent;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "other-my-component": LocalJSX.OtherMyComponent & JSXBase.HTMLAttributes<HTMLOtherMyComponentElement>;
         }
     }
 }

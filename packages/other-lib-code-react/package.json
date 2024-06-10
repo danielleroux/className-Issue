@@ -1,5 +1,5 @@
 {
-  "name": "some-lib-code-react",
+  "name": "other-lib-code-react",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "some-lib-code": "workspace:*"
+    "other-lib-code": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^16.18.11",
